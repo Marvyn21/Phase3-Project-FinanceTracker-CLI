@@ -22,7 +22,7 @@ class Category(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String)
 
-    transaction_list = relationship('Transaction', backref="category")
+    transactions = relationship('Transaction', backref="category")
 
 
 class BudgetGoal(Base):
