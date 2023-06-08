@@ -23,7 +23,7 @@ session = Session()
 
 # breakpoint()
 
-transaction1 = Transaction(amount=10, description="Transaction 1")
+transaction1 = Transaction(amount=100, description="Transaction 1")
 transaction2 = Transaction(amount=200, description="Transaction 2")
 
 category_name = "Category 1"
