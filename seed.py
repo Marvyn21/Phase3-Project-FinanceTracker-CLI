@@ -3,8 +3,25 @@ from sqlalchemy.orm import sessionmaker
 from models import Transaction, Category, BudgetGoal
 
 engine = create_engine('sqlite:///finance_tracker.db')
+
 Session = sessionmaker(bind=engine)
 session = Session()
+
+# category_name = "test category"
+
+# amount = 10
+# description = "test description"
+# category_id = 1
+
+# transaction = Transaction(
+#     amount=amount,
+#     description=description,
+#     category_id = category_id
+# )
+# session.add(transaction)
+# session.commit()
+
+# breakpoint()
 
 transaction1 = Transaction(amount=100, description="Transaction 1")
 transaction2 = Transaction(amount=200, description="Transaction 2")
