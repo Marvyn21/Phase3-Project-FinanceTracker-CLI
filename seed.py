@@ -26,7 +26,6 @@ session.commit()
 session.close()
 
 # category_name = "test category"
-
 # amount = 10
 # description = "test description"
 # category_id = 1
